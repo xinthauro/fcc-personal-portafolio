@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy|Nunito|Nunito+Sans|Permanent+Marker');
+
+:root {
+    --font-heading: 'Nunito Sans', sans-serif;
+    --font-body: 'Nunito', sans-serif;
+    --font-welcome-heading: 'Luckiest Guy', cursive;
+    --font-welcome-description: 'Permanent Marker', cursive;
+
+    --color-background-light: #f9f9f9;
+    --color-background-mid: #bcbab8;
+    --color-background-dark: #625757;
+    --color-font-welcome-description: #f8b595;
+    --color-font-welcome-title: #f67280;
+    --color-font-project-title: #6c5b7c;
+    --color-font-light: #f9f9f9;
+    --color-font-mid: #bcbab8;
+    --color-font-dark: #625757;
+
+    --color-linkedin: #0077b5;
+    --color-github: #333;
+    --color-twitter: #1da1f2;
+    --color-youtube: #ff0000;
+    --color-mail: #505264;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    /* background-color: var(--color-background-light); */
+    background-color: blanchedalmond;
+}
+
+.pad {
+    padding: 0 5rem;    
+}
+
+/*** NavBar ***/
+.nav {
+    position: sticky;
+    top: 0;
+    margin: 0;
+    width: 100%;
+    height: 3.2rem;
+    display: flex;
+    align-content: stretch;
+    justify-content: flex-end;
+    font-family: var(--font-body);
+    color: var(--color-font-mid);
+    background-color: var(--color-background-dark);
+}
+
+.nav-heading {
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+    text-decoration: none; 
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--color-font-mid);
+    font-family: var(--font-heading);
+}
+
+.nav-link:hover {
+    color: var(--color-font-dark);
+    background-color: var(--color-background-light);
+}
+
+/*** Welcome Section ***/
+.welcome-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    color: var(--color-font-mid);
+    background-color: var(--color-background-dark);
+    border-radius: 0 0 5% 5%;
+}
+
+.welcome-title {
+    display: flex;
+    justify-content: center;
+    color: var(--color-font-welcome-title);
+    font-family: var(--font-welcome-heading);
+    font-size: 4rem;
+}
+
+.welcome-description {
+    display: flex;
+    justify-content: center;
+    color: var(--color-font-welcome-description);
+    font-family: var(--font-welcome-description);
+    font-size: 2rem;
+}
+
+/*** Project Section ***/
+.project-container {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: center;
+    margin: 4rem auto;
+}
+
+.project-tile {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin: 1rem;
+}
+
+.project-title {
+    margin-top: .3rem;
+    color: var(--color-font-project-title);
+    font-size: 0.9rem;
+    font-family: var(--font-body);
+    font-weight: 600;
+}
+
+.project-tile img {
+    max-width: 300px;
+    border-radius: 8px;
+}
+
+/*** Contact Section ***/
+.contact {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 3rem;
+}
+
+.contact p {
+    padding-right: 2rem;
+    font-family: var(--font-body);
+    font-size: 1.4rem;
+}
+
+.contact-link {
+    font-size: 2rem;
+    padding-left: 1rem;
+    text-decoration: none;
+}
+
+.linkedin {
+    color: var(--color-linkedin);
+}
+
+.github {
+    color: var(--color-github);
+}
+
+.twitter {
+    color: var(--color-twitter);
+}
+
+.youtube {
+    color: var(--color-youtube);
+}
+
+@media (max-width: 400px) {
+    .pad {
+        padding: 0 1rem;
+    }
+
+    .nav {
+        height: 2.2rem;
+    }
+    
+    .nav-heading {
+        font-size: 1rem;
+    }
+    
+    .nav-link {
+        padding: 0 1rem;
+        font-size: .8rem;
+    }
+
+    .welcome-title {
+        font-size: 1.2rem;
+    }
+    
+    .welcome-description {
+        font-size: .9rem;
+    }
+    .project-title {
+        font-size: 1rem;
+    }
+
+    .project-tile img {
+        max-width: 220px;
+    }
+
+    .contact p {
+        font-size: .8rem;
+        /* padding-right: .8rem; */
+    }
+    
+    .contact-link {
+        font-size: 1rem;
+        padding-left: .5rem;
+    }
+}
+
